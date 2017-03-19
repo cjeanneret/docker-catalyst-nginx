@@ -8,6 +8,4 @@ COPY docker-entrypoint.d/* /docker-entrypoint.d/
 RUN chmod -R +x /docker-entrypoint.sh /docker-entrypoint.d/*
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["/bin/sh"]
-
 VOLUME ["/etc/nginx/conf.d/"]
