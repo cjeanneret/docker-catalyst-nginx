@@ -4,6 +4,6 @@ DIR=/docker-entrypoint.d
 
 if [[ -d "$DIR" ]]
 then
-  /bin/run-parts "$DIR"
+  /usr/bin/run-parts -v "$DIR"
 fi
-
+exec "$@"
